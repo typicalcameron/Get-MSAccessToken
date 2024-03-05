@@ -67,13 +67,13 @@
 ## Example(s):
 ### Code:
 ```powershell
-Get-MSAccessToken -ApplicationID "XXXXXXXXXXXXXXXXX" -Scope "https://api.securitycenter.microsoft.com/.default" -Location "Cert:\LocalMachine\My" -Thumbprint "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -TenantName "contoso.onmicrosoft.com"
+Get-MSAccessToken -ApplicationID "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -Scope "https://api.securitycenter.microsoft.com/.default" -Location "Cert:\LocalMachine\My" -Thumbprint "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -TenantName "contoso.onmicrosoft.com"
 ```
 ### Output:
 `qharerkhvjzkmcbytbmgbldppobigtvmhfsbgorurklkmxzumigltjtebzweoofmzkfdcntrmkpperzggcphrxghtojovsxxyveqwztbhldnkoqgavjhyotozqgdvtygiplzsptdecpuynsuljmktyjhvailizdfgbeurcqgvmqffuhuyecadilcwkjvpbpfebvpvfovhqfpsyeyhsgwiwubksjloktgcegikplxzxedeuqupiedtnixvtlgggpccxaeuntsfscljwppduhvlkvhmxvscblrosujqdhrsowvlzhskrkoipmyadpaxlmmhsdzajlhjjjanqitimshbbylgadimhtbsxzjsszmtidkptcxvxfwknjrykfexhwgudsprliesfpjbhpucdjvpdwqoboexjteyynpfjfytlxndvrtjqsktysureuaghayohwzfkdqxvfwjvbwrhsbasjhjuohovmrsqehjzyklcgqipqgmmrerixcatjtlfmzehnimumkgbjkzufffsomyhvxalbbelubumeypbphtrxrpdcndcusuxxkii`
 
 ### Code:
 ```powershell
-$AT = Get-MSAccessToken -ApplicationID "XXXXXXXXXXXXXXXXX" -Scope https://api.securitycenter.microsoft.com/.default -Location Cert:\CurrentUser\My -Thumbprint XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -TenantName "contoso.onmicrosoft.com"
+$AT = Get-MSAccessToken -ApplicationID "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -Scope "https://graph.microsoft.com/.default" -Location "Cert:\LocalMachine\My" -Thumbprint "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -TenantName "contoso.onmicrosoft.com"
 Connect-MgGraph -AccessToken $AT
 ```
