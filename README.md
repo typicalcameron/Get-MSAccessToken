@@ -1,2 +1,3 @@
 # Get-MSAccessToken
- Using a computer cert, you can access specific azure scopes using MS Graph
+## Description:
+* This function is designed to retrieve an access token from Azure, using a computer certificate for authentication. It can be used in automation or scripting scenarios without the use of having to enter client credentials.
