@@ -67,7 +67,7 @@
 ## Example(s):
 ### Code:
 ```powershell
-Get-MSAccessToken -ApplicationID "XXXXXXXXXXXXXXXXX" -Scope https://api.securitycenter.microsoft.com/.default -Location Cert:\CurrentUser\My -Thumbprint XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -TenantName "contoso.onmicrosoft.com"
+Get-MSAccessToken -ApplicationID "XXXXXXXXXXXXXXXXX" -Scope "https://api.securitycenter.microsoft.com/.default" -Location "Cert:\LocalMachine\My" -Thumbprint "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -TenantName "contoso.onmicrosoft.com"
 ```
 ### Output:
 `qharerkhvjzkmcbytbmgbldppobigtvmhfsbgorurklkmxzumigltjtebzweoofmzkfdcntrmkpperzggcphrxghtojovsxxyveqwztbhldnkoqgavjhyotozqgdvtygiplzsptdecpuynsuljmktyjhvailizdfgbeurcqgvmqffuhuyecadilcwkjvpbpfebvpvfovhqfpsyeyhsgwiwubksjloktgcegikplxzxedeuqupiedtnixvtlgggpccxaeuntsfscljwppduhvlkvhmxvscblrosujqdhrsowvlzhskrkoipmyadpaxlmmhsdzajlhjjjanqitimshbbylgadimhtbsxzjsszmtidkptcxvxfwknjrykfexhwgudsprliesfpjbhpucdjvpdwqoboexjteyynpfjfytlxndvrtjqsktysureuaghayohwzfkdqxvfwjvbwrhsbasjhjuohovmrsqehjzyklcgqipqgmmrerixcatjtlfmzehnimumkgbjkzufffsomyhvxalbbelubumeypbphtrxrpdcndcusuxxkii`
