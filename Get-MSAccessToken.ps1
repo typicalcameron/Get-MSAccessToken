@@ -5,10 +5,10 @@
 	(
 		[Parameter(Mandatory = $true)]
 		[string]$ApplicationID,
-        [Parameter(Mandatory = $true)]
+        	[Parameter(Mandatory = $true)]
 		[validateset("https://vault.azure.net/.default","https://graph.microsoft.com/.default","https://api.securitycenter.microsoft.com/.default")]
-        [string]$Scope,
-        [Parameter(Mandatory = $true)]
+        	[string]$Scope,
+        	[Parameter(Mandatory = $true)]
 		[validateset("Cert:\LocalMachine\My","Cert:\CurrentUser\My")]
 		[string]$Location,
 		[Parameter(Mandatory = $true)]
@@ -88,11 +88,11 @@
 	    $JWT = $JWT + "." + $Signature
 	    
 	    $Body = @{
-	    	client_id			  = $ApplicationID
-	    	client_assertion	  = $JWT
+	    	client_id	      = $ApplicationID
+	    	client_assertion      = $JWT
 	    	client_assertion_type = "urn:ietf:params:oauth:client-assertion-type:jwt-bearer"
-	    	scope   		      = $Scope
-	    	grant_type		      = "client_credentials"
+	    	scope   	      = $Scope
+	    	grant_type	      = "client_credentials"
 	    	
 	    }
 
@@ -106,7 +106,7 @@
 	    	ContentType = 'application/x-www-form-urlencoded'
 	    	Method	    = 'POST'
 	    	Body	    = $Body
-	    	Uri		    = $Uri
+	    	Uri 	    = $Uri
 	    	Headers	    = $Header
 	    }
 	    
