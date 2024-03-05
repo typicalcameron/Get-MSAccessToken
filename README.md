@@ -65,14 +65,14 @@
 * Returns the access token (`$Request.Access_Token`) obtained from the token response.
 
 ## Example(s):
-### Code:
+### Example 1:
 ```powershell
 Get-MSAccessToken -ApplicationID "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -Scope "https://api.securitycenter.microsoft.com/.default" -Location "Cert:\LocalMachine\My" -Thumbprint "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -TenantName "contoso.onmicrosoft.com"
 ```
-### Output:
+### Example 1 Output:
 `qharerkhvjzkmcbytbmgbldppobigtvmhfsbgorurklkmxzumigltjtebzweoofmzkfdcntrmkpperzggcphrxghtojovsxxyveqwztbhldnkoqgavjhyotozqgdvtygiplzsptdecpuynsuljmktyjhvailizdfgbeurcqgvmqffuhuyecadilcwkjvpbpfebvpvfovhqfpsyeyhsgwiwubksjloktgcegikplxzxedeuqupiedtnixvtlgggpccxaeuntsfscljwppduhvlkvhmxvscblrosujqdhrsowvlzhskrkoipmyadpaxlmmhsdzajlhjjjanqitimshbbylgadimhtbsxzjsszmtidkptcxvxfwknjrykfexhwgudsprliesfpjbhpucdjvpdwqoboexjteyynpfjfytlxndvrtjqsktysureuaghayohwzfkdqxvfwjvbwrhsbasjhjuohovmrsqehjzyklcgqipqgmmrerixcatjtlfmzehnimumkgbjkzufffsomyhvxalbbelubumeypbphtrxrpdcndcusuxxkii`
 
-### Code:
+### Example 2 Code:
 ```powershell
 $AT = Get-MSAccessToken -ApplicationID "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -Scope "https://graph.microsoft.com/.default" -Location "Cert:\LocalMachine\My" -Thumbprint "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -TenantName "contoso.onmicrosoft.com"
 Connect-MgGraph -AccessToken $AT
