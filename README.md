@@ -34,7 +34,7 @@
 
 ### Upload certificate to Azure Application:
 1. Within your registered application, navigate to **Certificates & Secrets** tab.
-2. Under the** Certificates** tab > Click **Upload Certificate**.
+2. Under the **Certificates** tab > Click **Upload Certificate**.
 3. Select the exported certificate from your local machine.
 4. Give a **description** if needed.
 5. Click **Add**.
